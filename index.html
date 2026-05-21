@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="app-header">
+      <div class="header-icon">📋</div>
+      <h1 class="app-title">Quản Lý Công Việc</h1>
+      <p class="app-subtitle">Hôm nay bạn cần làm gì?</p>
+    </header>
+
+    <div class="input-section">
+      <div class="input-wrapper">
+        <span class="input-icon">✏️</span>
+        <input
+          type="text"
+          id="taskInput"
+          class="task-input"
+          placeholder="Nhập công việc mới..."
+          autocomplete="off"
+        />
+      </div>
+      <button id="addBtn" class="add-btn">
+        <span>Thêm</span>
+        <span class="btn-icon">+</span>
+      </button>
+    </div>
+
+    <div class="list-section">
+      <div class="list-header">
+        <h2 class="list-title">Danh sách công việc</h2>
+        <span id="taskCount" class="task-count">0 việc</span>
+      </div>
+      <ul id="taskList" class="task-list">
+        <li class="empty-state">
+          <span class="empty-icon">🌿</span>
+          <p>Chưa có công việc nào. Hãy thêm một việc mới!</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
